@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MP4解封装</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .controls {
+            display: block;
+            width: 100%;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <style>
+        .container {
+            width: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        #video {
+          background: #000;
+          width: 300px;
+        }
+
+        #input {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+  <div class="container">
+    <canvas id="video" width="0" height="0"></canvas>
+  </div>
+
+  <div class="controls">
+    <h2>视频</h2>
+    <input id="input" value="http://192.168.244.209:1048/265.mp4" />
+    <button onclick="load()">Load</button>
+    <button onclick="play()">Play</button>
+    <button onclick="pause()">Pause</button>
+</div>
+<script type="text/javascript" src="H265.js"></script></body>
+
+</html>
